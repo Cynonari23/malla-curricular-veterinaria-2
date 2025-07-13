@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#materias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.materia {
+  padding: 10px 15px;
+  background: lightgray;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.materia.aprobada {
+  background: #90ee90;
+}
+
+.materia.bloqueada {
+  background: #dcdcdc;
+  color: #888;
+  pointer-events: none;
+}
