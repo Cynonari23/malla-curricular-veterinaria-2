@@ -97,3 +97,13 @@ function crearMalla() {
     contenedor.appendChild(fila);
   });
 }
+function resetearProgreso() {
+  if (confirm("¿Estás segura de que querés reiniciar tu malla?")) {
+    localStorage.removeItem("estado-materias");
+    crearMalla();
+  }function resetearProgreso() {
+  if (confirm("¿Estás segura de que querés reiniciar tu malla?")) {
+    localStorage.removeItem("estado-materias");
+    crearMalla();
+  }
+}
